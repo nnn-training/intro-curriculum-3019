@@ -15,13 +15,13 @@
 
 ### モジュール設計 (一例)
 
-|  ファイルパス  | モジュールの役割 |
+|  ファイルパス  |  モジュールの役割  |
 | ---- | ---- | ---- |
-|  index.js  | HTTPサーバーを起動する | 
-|  lib/router.js  | リクエストに対し処理を行うハンドラに振り分ける |
-|  lib/posts-handler.js  | /posts のリクエストを処理する |
-|  lib/handler-utiles.js | その他のリクエストを処理する |
-|  lib/post.js  | 投稿を追加、取得、削除する |
+|  index.js  |  HTTPサーバーを起動する  | 
+|  lib/router.js  |  リクエストに対し処理を行うハンドラに振り分ける  |
+|  lib/posts-handler.js  |  /posts のリクエストを処理する  |
+|  lib/handler-utiles.js |  その他のリクエストを処理する  |
+|  lib/post.js  |  投稿を追加、取得、削除する  |
 
 - router.js でルーティングを実装
 - posts-handler.js, handler-utiles.js はルーターによって振り分けられた処理を具体的に実行する
