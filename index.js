@@ -1,6 +1,10 @@
 'use strict';
 const http = require('http');
 const server = http.createServer((req, res) => {
+  // ニコニコ動画へ
+  res.writeHead(302, {
+    'Location': 'https://www.nicovideo.jp/'
+  });
   res.end();
 });
 const port = 8000;
