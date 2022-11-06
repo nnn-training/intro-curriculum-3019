@@ -1,7 +1,7 @@
 'use strict';
 const http = require('http');
 const server = http.createServer((req, res) => {
-  res.writeHeade(302, {
+  res.writeHead(302, {
     Location: 'https://www.nnn.ed.nico/'
   });
   res.end();
