@@ -1,6 +1,9 @@
 'use strict';
 const http = require('node:http');
 const server = http.createServer((req, res) => {
+  res.writeHead(302, {
+    location: 'https://www.nicovideo.jp'
+  });
   res.end();
 });
 const port = 8000;
