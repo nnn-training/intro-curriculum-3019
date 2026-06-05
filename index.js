@@ -1,6 +1,10 @@
 'use strict';
 const http = require('node:http');
 const server = http.createServer((req, res) => {
+  // 指定URLへリダイレクトする処理
+  res.writeHead(302, {
+  'Location': 'https://www.nicovideo.jp/'
+  });
   res.end();
 });
 const port = 8000;
